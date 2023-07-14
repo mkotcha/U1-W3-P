@@ -238,10 +238,7 @@ const onlyLetters = str => str.replace(/[0-9]/g, "").replace("  ", " ");
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
-const isThisAnEmail = str => {
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(str)) return true;
-  else return false;
-};
+const isThisAnEmail = str => (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(str) ? true : false);
 
 // console.log(isThisAnEmail("aff@foo.bar"));
 
