@@ -239,7 +239,6 @@ const onlyLetters = str => str.replace(/[0-9]/g, "").replace("  ", " ");
 */
 
 // regex copiata da internet
-// const isThisAnEmail = str => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(str);
 const isThisAnEmail = str => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,16})+$/.test(str);
 
 // console.log(isThisAnEmail("aff@foo.shop"));
