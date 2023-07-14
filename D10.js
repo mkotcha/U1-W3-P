@@ -443,17 +443,30 @@ const logTd = () => selectTd().forEach(element => console.log(element.innerText)
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 
+const setRedLink = () => document.querySelectorAll("a").forEach(element => (element.style.backgroundColor = "red"));
+
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
+
+const addLi = () => {
+  const li = document.createElement("li");
+  li.innerText = "New element text";
+  const ul = document.getElementById("myList");
+  ul.appendChild(li);
+};
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 
+const eraseList = () => document.querySelectorAll("#myList > li").forEach(element => element.remove());
+
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+
+const testTr = () => document.querySelectorAll("tr").forEach(element => element.classList.add("test"));
 
 // [EXTRA] JS Avanzato
 
