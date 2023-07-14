@@ -509,7 +509,8 @@ const tree = num => {
   let pad = "";
   for (let i = num; i > 0; i--) {
     str += "*";
-    pad = pad.padStart(i - 1, " ");
+    // pad = pad.padStart(i - 1, " ");
+    pad = " ".repeat(i - 1);
     console.log(pad + str + str.substring(1));
     pad = "";
   }
@@ -530,4 +531,4 @@ const isItPrime = num => {
   return true;
 };
 
-console.log(isItPrime(1));
+// console.log(isItPrime(1));
