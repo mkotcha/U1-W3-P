@@ -242,7 +242,7 @@ const onlyLetters = str => str.replace(/[0-9]/g, "").replace("  ", " ");
 // const isThisAnEmail = str => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(str);
 const isThisAnEmail = str => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,16})+$/.test(str);
 
-console.log(isThisAnEmail("aff@foo.shop"));
+// console.log(isThisAnEmail("aff@foo.shop"));
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
