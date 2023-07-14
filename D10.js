@@ -523,10 +523,9 @@ const tree = num => {
 const isItPrime = num => {
   if (num === 1) return false;
   for (let i = 2; i <= num / 2; i++) {
-    console.log(i);
     if (num % i === 0) return false;
   }
   return true;
 };
 
-// console.log(isItPrime(1));
+// console.log(isItPrime(6));
